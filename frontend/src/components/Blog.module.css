@@ -1,0 +1,87 @@
+.blog {
+  width: 80vw;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0 10px 10px rgba(152, 110, 110, 0.1),
+    10px 0 10px rgba(152, 110, 110, 0.1), 0 -10px 10px rgba(152, 110, 110, 0.1),
+    -10px 0 10px rgba(152, 110, 110, 0.1);
+  display: flex;
+  flex-direction: column;
+  color: #353057;
+}
+
+.blog_title {
+  margin-bottom: 15px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.blog_content {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  margin-bottom: 16px;
+}
+
+.blog_detail {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 9px;
+}
+
+.blog_cat {
+  background: #f14b4a;
+  border-radius: 10px;
+  padding: 5px 8px;
+  width: fit-content;
+  color: #fff;
+}
+
+.link {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit text color */
+}
+
+.blogButtons {
+  display: flex; /* Make the buttons flex container */
+  gap: 10px; /* Add spacing between buttons */
+  justify-content: flex-end;
+  margin-top: 5px;
+}
+
+.deleteButton {
+  background-color: #fff; /* Change red shade for better consistency */
+  color: red;
+  padding: 8px 15px; /* Increase padding for better tap target */
+  border: none; /* Remove button border for cleaner look */
+  border-radius: 5px; /* Apply border radius for button */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease; /* Add transition for smoother hover effect */
+}
+
+.deleteButton:hover {
+  background-color: #ff0000;
+  color: #fff; /* Darken red on hover for visual feedback */
+}
+.updateButton {
+  background-color: #fff; /* Change yellow shade for better consistency */
+  color: #00ff00;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.updateButton:hover {
+  background-color: #00ff00;
+  color: #fff; /* Darken yellow on hover for visual feedback */
+}
+
+@media (max-width: 600px) {
+  .blog_content {
+    font-size: 1rem;
+  }
+}

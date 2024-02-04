@@ -1,0 +1,54 @@
+.bloglist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+  padding-top: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.prevButton,
+.nextButton {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f14b4a;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.prevButton:disabled,
+.nextButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pnumber {
+  padding: 0 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.noposts {
+  margin-top: 120px;
+  color: #f14b4a;
+  font-size: 1.6rem;
+}

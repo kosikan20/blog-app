@@ -1,0 +1,72 @@
+.registerContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.registerForm {
+  width: 300px;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0 10px 10px rgba(152, 110, 110, 0.1),
+    10px 0 10px rgba(152, 110, 110, 0.1), 0 -10px 10px rgba(152, 110, 110, 0.1),
+    -10px 0 10px rgba(152, 110, 110, 0.1);
+}
+
+.formTitle {
+  margin-bottom: 15px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #d94342;
+}
+
+.formGroup {
+  margin-bottom: 16px;
+}
+
+label {
+  font-size: 1.2rem;
+  color: #353057;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 10px;
+  background-color: #f14b4a;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #d94342;
+}
+
+.linkContainer {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.link {
+  color: #d94342;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: rgba(217, 67, 66, 0.6); /* Add underline on hover */
+}
