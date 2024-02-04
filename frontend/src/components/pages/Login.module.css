@@ -69,5 +69,5 @@ input {
 }
 
 .link:hover {
-  color: rgba(217, 67, 66, 0.6); /* Add underline on hover */
+  color: rgba(217, 67, 66, 0.6);
 }

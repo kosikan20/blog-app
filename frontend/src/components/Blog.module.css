@@ -28,7 +28,7 @@
 .blog_detail {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 9px;
+  margin: 9px 0px;
 }
 
 .blog_cat {
@@ -40,33 +40,32 @@
 }
 
 .link {
-  text-decoration: none; /* Remove underline */
-  color: inherit; /* Inherit text color */
+  text-decoration: none;
+  color: inherit;
 }
-
 .blogButtons {
-  display: flex; /* Make the buttons flex container */
-  gap: 10px; /* Add spacing between buttons */
+  display: flex;
+  gap: 10px;
   justify-content: flex-end;
   margin-top: 5px;
 }
 
 .deleteButton {
-  background-color: #fff; /* Change red shade for better consistency */
+  background-color: #fff;
   color: red;
-  padding: 8px 15px; /* Increase padding for better tap target */
-  border: none; /* Remove button border for cleaner look */
-  border-radius: 5px; /* Apply border radius for button */
-  cursor: pointer; /* Change cursor to pointer on hover */
-  transition: background-color 0.3s ease; /* Add transition for smoother hover effect */
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .deleteButton:hover {
   background-color: #ff0000;
-  color: #fff; /* Darken red on hover for visual feedback */
+  color: #fff;
 }
 .updateButton {
-  background-color: #fff; /* Change yellow shade for better consistency */
+  background-color: #fff;
   color: #00ff00;
   padding: 8px 15px;
   border: none;
@@ -77,11 +76,17 @@
 
 .updateButton:hover {
   background-color: #00ff00;
-  color: #fff; /* Darken yellow on hover for visual feedback */
+  color: #fff;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .blog_content {
     font-size: 1rem;
+  }
+  .blog_detail {
+    flex-direction: column;
+  }
+  .blog_author_detail {
+    margin-bottom: 5px;
   }
 }

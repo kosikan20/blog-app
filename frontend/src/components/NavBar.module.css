@@ -26,7 +26,7 @@
   margin-right: 15px;
 }
 .navLink:last-child {
-  margin-right: 0; /* Remove margin for the last link */
+  margin-right: 0;
 }
 .navLink:hover {
   text-decoration: underline;

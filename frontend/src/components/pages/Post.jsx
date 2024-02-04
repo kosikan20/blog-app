@@ -54,6 +54,7 @@ const Post = () => {
     <div className={classes.blog}>
       <div className={classes.blog_title}>{post.title}</div>
       <div className={classes.blog_content}>{post.content}</div>
+      <hr className={classes.hr} />
       <div className={classes.blog_detail}>
         <div className={classes.blog_author_detail}>By:{post.userID}</div>
         <div className={classes.blog_date_detail}>

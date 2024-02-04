@@ -41,6 +41,7 @@ const Blog = ({ id, title, date, author, cat, content }) => {
       <Link to={`/posts/${id}`} className={classes.link}>
         <div className={classes.blog_title}>{title}</div>
         <div className={classes.blog_content}>{content}</div>
+        <hr />
         <div className={classes.blog_detail}>
           <div className={classes.blog_author_detail}>By:{author}</div>
           <div className={classes.blog_date_detail}>Posted:{format(date)}</div>

@@ -64,3 +64,5 @@ const login = async (req, res) => {
   }
 };
 module.exports = { register, login };
+
+//this one is not used
