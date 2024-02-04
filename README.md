@@ -21,4 +21,5 @@ go to the registration page  and fill in the form
 then go add-post page to add any post
 update the post by clicking  the upload button
 delete the post by clicking the delete button
+you can also see your posts on the myposts page
 *spoiler alert* you'll be logged out after deleting a post
