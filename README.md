@@ -7,8 +7,9 @@ open the terminal go to the frontend directory and run
     npm install
     npm start
 
-open the terminal go to the backend directory and run
-*also replace the dotenv files with your file* 
+open the terminal go to the backend directory 
+replace the dotenv files with your file
+and run
 
     npm install
     npm start
