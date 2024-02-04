@@ -35,7 +35,7 @@
 .blog_cat {
   background: #f14b4a;
   border-radius: 10px;
-  padding: 5px 8px;
+  padding: 8px 8px;
   width: fit-content;
   color: #fff;
 }
@@ -50,6 +50,11 @@
   color: inherit;
 }
 
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .blogButtons {
   display: flex;
   gap: 10px;
@@ -57,22 +62,9 @@
   margin-top: 5px;
 }
 
-.deleteButton {
-  background-color: #fff;
-  color: red;
-  padding: 8px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.deleteButton:hover {
-  background-color: #ff0000;
-  color: #fff;
-}
 .updateButton {
   background-color: #fff;
+  color: #00ff00;
   padding: 8px 15px;
   border: none;
   border-radius: 5px;

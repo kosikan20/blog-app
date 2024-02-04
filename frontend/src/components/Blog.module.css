@@ -43,27 +43,18 @@
   text-decoration: none;
   color: inherit;
 }
+
 .blogButtons {
   display: flex;
   gap: 10px;
   justify-content: flex-end;
-  margin-top: 5px;
 }
 
-.deleteButton {
-  background-color: #fff;
-  color: red;
-  padding: 8px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+.bottom {
+  display: flex;
+  justify-content: space-between;
 }
 
-.deleteButton:hover {
-  background-color: #ff0000;
-  color: #fff;
-}
 .updateButton {
   background-color: #fff;
   color: #00ff00;

@@ -59,7 +59,7 @@ const UpdatePost = () => {
           title: "Post Updated",
           text: "post updated successfully",
           iconColor: "green",
-          icon: "error",
+          icon: "success",
           confirmButtonText: "Close",
           confirmButtonColor: "green",
           allowOutsideClick: false,
@@ -80,9 +80,39 @@ const UpdatePost = () => {
     updatePost();
   };
 
+  const postDeleteHandler = (e) => {
+    e.preventDefault();
+    const deletePost = async () => {
+      try {
+        await axios.delete(`http://localhost:5500/api/v0/posts/${id}`);
+        Swal.fire({
+          title: "Post deleted",
+          text: "your post deleted successfully",
+          iconColor: "green",
+          icon: "success",
+          confirmButtonText: "Close",
+          confirmButtonColor: "green",
+          allowOutsideClick: false,
+        });
+        navigate("/");
+      } catch (error) {
+        Swal.fire({
+          title: "Request unsuccessful",
+          text: error.message,
+          iconColor: "red",
+          icon: "error",
+          confirmButtonText: "Close",
+          confirmButtonColor: "red",
+          allowOutsideClick: false,
+        });
+      }
+    };
+    deletePost();
+  };
+
   return (
     <div className={classes.updatePostContainer}>
-      <h1 className={classes.updatePostTitle}>Update Post</h1>
+      <h1 className={classes.updatePostTitle}>Edit Post</h1>
       <div>
         <form className={classes.updatePostForm} onSubmit={postUpdateHandler}>
           <div className={classes.inputGroup}>
@@ -101,8 +131,15 @@ const UpdatePost = () => {
               onChange={(e) => setContent(e.target.value)}
             />
           </div>
-          <button className={classes.addButton} type="submit">
+          <button className={classes.updateButton} type="submit">
             Update Post
+          </button>
+        </form>
+      </div>
+      <div>
+        <form className={classes.deletePostForm} onSubmit={postDeleteHandler}>
+          <button className={classes.deleteButton} type="submit">
+            Delete Post
           </button>
         </form>
       </div>
